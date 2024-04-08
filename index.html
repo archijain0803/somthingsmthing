@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head> 
+    <body>
+        <div class="container">
+            <div >
+                <h1 class = "header_text">Will you be my 7minutes?</h1>
+                <h1 class = "header_text">?????</h1>
+            </div>
+            <div class="container">
+                <div class="tenor-gif-embed" data-postid="16175439" data-share-method="host" data-aspect-ratio="1.10345" data-width="100%"><a href="https://tenor.com/view/bunny-rabbit-question-confused-adorable-gif-16175439">Bunny Rabbit Sticker</a>from <a href="https://tenor.com/search/bunny-stickers">Bunny Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+                <div class = "buttons">
+                <button class="btn" id = "7 minutesButton" onclick="nextPage()">7 minutes? </button>
+                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                <script>
+                    function nextPage() {
+                        window.location.href = "7 minutes.html";
+                    }
+                    
+                    function moveButton() {
+                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
+                        document.getElementById('noButton').style.left = `${x}px`;
+                        document.getElementById('noButton').style.top = `${y}px`;
+                    }
+                </script> 
+            </div>
+        </div>
+       
+    </body> 
+</html>
